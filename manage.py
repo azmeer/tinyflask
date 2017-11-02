@@ -1,4 +1,4 @@
-# project/manage.py
+# manage.py
 
 from flask_script import Manager
 
