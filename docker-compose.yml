@@ -1,0 +1,13 @@
+version: '2.1' # docker compose file version, not related to docker-compose version
+
+# directories are relative to the location of this file
+
+services:
+
+  users-service:
+    container_name: users-service
+    build: .
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - 5001:5000 # expose ports - HOST:CONTAINER
